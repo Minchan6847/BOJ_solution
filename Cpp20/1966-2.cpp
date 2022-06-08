@@ -1,6 +1,7 @@
 //
 // Created by Minchan Kim on 2022/06/07.
 //
+// reference: https://artiper.tistory.com/72
 // 2,024 KB, 0 ms
 #include <iostream>
 #include <queue>
