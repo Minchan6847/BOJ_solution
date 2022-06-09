@@ -3,7 +3,6 @@
 //
 // 2,024 KB, 0 ms
 #include <iostream>
-#include <vector>
 #include <deque>
 
 using namespace std;
@@ -16,19 +15,18 @@ int main() {
     int N, M;
     cin >> N >> M;
 
-    vector<int> v(M, 0);
-    for (auto &elem: v)
-        cin >> elem;
-
     deque<int> dq;
     for (int i = 1; i <= N; ++i)
         dq.emplace_back(i);
 
     //O(M*N*(N/2)), 1 <= M <= N <= 50
     int res = 0;
-    for (const auto &elem: v) {
+    while (M--) {
+        int num;
+        cin >> num;
+
         for (int i = 0; i < dq.size(); ++i) {
-            if (elem == dq[i]) {
+            if (num == dq[i]) {
                 if (i <= dq.size() / 2) {
                     for (int j = 0; j < i; ++j) {
                         dq.emplace_back(dq.front());
