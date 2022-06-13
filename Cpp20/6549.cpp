@@ -2,6 +2,7 @@
 // Created by Minchan Kim on 2022/06/14.
 //
 // 2,920 KB, 44 ms
+// reference: https://st-lab.tistory.com/255
 #include <iostream>
 #include <vector>
 
