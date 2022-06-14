@@ -24,17 +24,13 @@ int main() {
     stack<int> st;
     st.emplace(0);
 
-    vector<int> res(N, 0);
+    vector<int> res(N, -1);
     for (int i = 1; i < N; ++i) {
         while (!st.empty() && v[st.top()] < v[i]) {
             res[st.top()] = v[i];
             st.pop();
         }
         st.emplace(i);
-    }
-    while (!st.empty()) {
-        res[st.top()] = -1;
-        st.pop();
     }
 
     for (const auto &elem: res)
