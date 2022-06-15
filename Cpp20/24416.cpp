@@ -1,6 +1,7 @@
 //
 // Created by Minchan Kim on 2022/06/15.
 //
+// O(2^n)
 // 2,020 KB, 136 ms
 #include <iostream>
 
