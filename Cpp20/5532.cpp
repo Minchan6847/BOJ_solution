@@ -17,7 +17,7 @@ int main() {
 
 /*
 // 제출번호: 44704263, ID: dkrdj1215
-// 2,020 KB, 0 ms 
+// 2,020 KB, 0 ms
 #include<iostream>
 #include<algorithm>
 
