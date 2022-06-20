@@ -14,3 +14,21 @@ int main() {
 
     return 0;
 }
+
+/*
+// 제출번호: 44704263, ID: dkrdj1215
+// 2,020 KB, 0 ms 
+#include<iostream>
+#include<algorithm>
+
+using namespace std;
+
+int main(void) {
+    int a, b, c, d, l;
+    cin >> l >> a >> b >> c >> d;
+    a = (a + c - 1) / c;
+    b = (b + d - 1) / d;
+    cout << l - max(a, b);
+    return 0;
+}
+ */
