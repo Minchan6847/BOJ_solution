@@ -1,7 +1,7 @@
 //
 // Created by Minchan Kim on 2022/07/05.
 //
-// 6,388 KB, 92 ms
+// 6,388 KB, 88 ms
 #include <iostream>
 #include <vector>
 
@@ -35,9 +35,10 @@ int main() {
 
     int res = 0;
     for (int i = 1; i <= N; ++i) {
-        if (!visit[i])
+        if (!visit[i]) {
             res++;
-        dfs(i, adj, visit);
+            dfs(i, adj, visit);
+        }
     }
 
     cout << res;
