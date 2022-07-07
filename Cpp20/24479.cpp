@@ -1,14 +1,13 @@
 //
 // Created by Minchan Kim on 2022/07/07.
 //
-// 26,516 KB, 416 ms
+// 10,796 KB, 224 ms
 #include <iostream>
 #include <vector>
-#include <set>
 
 using namespace std;
 
-vector<set<int>> adj(100'001);
+vector<vector<int>> adj(100'001);
 vector<int> visited(100'001, 0);
 int seq = 1;
 
@@ -27,9 +26,12 @@ int main() {
     while (M--) {
         int u, v;
         cin >> u >> v;
-        adj[u].emplace(v);
-        adj[v].emplace(u);
+        adj[u].emplace_back(v);
+        adj[v].emplace_back(u);
     }
+
+    for (int i = 1; i <= N; ++i)
+        sort(adj[i].begin(), adj[i].end());
 
     dfs(R);
 
