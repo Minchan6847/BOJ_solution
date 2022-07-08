@@ -1,7 +1,7 @@
 //
 // Created by Minchan Kim on 2022/07/07.
 //
-// 10,796 KB, 224 ms
+// 10,924 KB, 92 ms
 #include <iostream>
 #include <vector>
 
@@ -20,6 +20,10 @@ void dfs(const int &cur) {
 }
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
     int N, M, R;
     cin >> N >> M >> R;
 
