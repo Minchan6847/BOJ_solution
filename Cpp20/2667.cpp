@@ -10,17 +10,17 @@ using namespace std;
 int N;
 vector<vector<int>> m(25, vector<int>(25, 0));
 vector<vector<int>> visited(25, vector<int>(25, 0));
-vector<pair<int, int>> s = {{0,  -1},
-                            {0,  1},
-                            {-1, 0},
-                            {1,  0}};
+vector<pair<int, int>> delta = {{0,  -1},
+                                {0,  1},
+                                {-1, 0},
+                                {1,  0}};
 int label = 0;
 vector<int> cnt(1, 0);
 
 void dfs(const int &r, const int &c) {
     visited[r][c] = 1;
     cnt[label]++;
-    for (const auto &[dr, dc]: s) {
+    for (const auto &[dr, dc]: delta) {
         int nr = r + dr;
         int nc = c + dc;
         if (nr >= 0 && nr < N && nc >= 0 && nc < N)
