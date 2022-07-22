@@ -1,0 +1,18 @@
+//
+// Created by Minchan Kim on 2022/07/22.
+//
+// 2,020 KB, 0 ms
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double d1, d2;
+    cin >> d1 >> d2;
+
+    cout << fixed;
+    cout.precision(6);
+    cout << d1 * 2 + 2 * 3.141592 * d2;
+
+    return 0;
+}
