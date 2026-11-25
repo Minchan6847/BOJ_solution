@@ -24,4 +24,5 @@
 ```bash
 g++ -std=c++20 -O2 -o solution Cpp20/9663.cpp
 ./solution < input.txt
+./solution < input.txt | diff - output.txt
 ```
