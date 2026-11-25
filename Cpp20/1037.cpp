@@ -1,6 +1,7 @@
 //
 // Created by Minchan Kim on 2022/05/19.
 //
+#include <algorithm>
 #include <iostream>
 #include <vector>
 

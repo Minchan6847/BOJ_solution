@@ -3,6 +3,7 @@
 //
 // O(N * log N) / 1 <= N <= 50
 // 2,024 KB, 0 ms
+#include <algorithm>
 #include <iostream>
 #include <vector>
 
