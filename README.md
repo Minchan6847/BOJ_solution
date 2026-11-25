@@ -2,12 +2,11 @@
 
 **English** | [한국어](README.ko.md)
 
-My solutions to algorithm problems on [Baekjoon Online Judge](https://www.acmicpc.net) (BOJ), written in C++20. I solved them as practice between May and August 2022.
+My solutions to algorithm problems on [Baekjoon Online Judge](https://www.acmicpc.net) (BOJ), written in C++20.
 
 ## Contents
 
 - About 230 problems, 289 source files, all in [`Cpp20/`](Cpp20).
-- Every solution in the repository was accepted by the judge.
 
 ## File names
 
