@@ -28,7 +28,7 @@ void printStar(const int &n, const int &m) {
         printUnderscore(m);
         cout << "그의 답은 대부분 옳았다고 하네. 그런데 어느 날, 그 선인에게 한 선비가 찾아와서 물었어.\"\n";
 
-        recursion(n - 1, m + 1);
+        printStar(n - 1, m + 1);
 
         printUnderscore(m);
         cout << "라고 답변하였지.\n";
@@ -43,7 +43,7 @@ int main() {
     int N = 0;
     cin >> N;
     cout << "어느 한 컴퓨터공학과 학생이 유명한 교수님을 찾아가 물었다.\n";
-    recursion(N, 0);
+    printStar(N, 0);
 
     return 0;
 }

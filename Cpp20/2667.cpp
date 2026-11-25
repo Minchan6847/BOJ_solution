@@ -2,6 +2,7 @@
 // Created by Minchan Kim on 2022/07/12.
 //
 // 2,160 KB, 0 ms
+#include <algorithm>
 #include <iostream>
 #include <vector>
 

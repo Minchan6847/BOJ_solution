@@ -1,0 +1,27 @@
+name: Compile
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  cpp20:
+    name: g++ -std=c++20 -O2
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile every solution
+        run: |
+          g++ --version | head -1
+          fail=0
+          for f in Cpp20/*.cpp; do
+            if ! g++ -std=c++20 -O2 -o /dev/null "$f" 2> err.txt; then
+              echo "::error file=$f::$f does not compile"
+              cat err.txt
+              fail=$((fail + 1))
+            fi
+          done
+          echo "$fail file(s) failed to compile"
+          exit $(( fail > 0 ))
